@@ -2,9 +2,9 @@
 
 /**
 * main - Entry point
-* 
+*
 * Description: 'Using printf instaed of puts'
-* 
+*
 * Return: Always 0 (Success)
 */
 
