@@ -2,7 +2,7 @@
 
 /**
 * main - Entry point
-*
+* 
 * Description: 'Using printf instaed of puts'
 * 
 * Return: Always 0 (Success)
@@ -10,6 +10,6 @@
 
 int main(void)
 {
-	printf("with proper grammar, but the outcome is a place of art,");
+	printf("with proper grammar, but the outcome is a place of art,\n");
 	return (0);
 }
