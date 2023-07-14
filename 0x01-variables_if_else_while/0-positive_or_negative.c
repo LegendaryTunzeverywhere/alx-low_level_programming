@@ -5,11 +5,10 @@
 /**
  * main - Entry point
  *
- * Description: 'void'
+ * Description: '0-positive_or_negative'
  *
  * Return 0 (Success)
  */
-
 int main(void)
 {
 	int n;
