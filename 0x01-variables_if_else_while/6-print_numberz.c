@@ -5,7 +5,7 @@
  *
  * Description: Print numbers with variable from char
  *
- * Returm: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
