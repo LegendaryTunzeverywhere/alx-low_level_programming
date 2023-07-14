@@ -5,11 +5,12 @@
 /**
  * main - Entry point
  *
- * Description: '0-positive_or_negative'
+ * Description: Prints whether a randomly generated number is positive.
  *
- * Return 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
+
 {
 	int n;
 
