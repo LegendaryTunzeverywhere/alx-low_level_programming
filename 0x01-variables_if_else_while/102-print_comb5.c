@@ -1,43 +1,34 @@
-#include <stdio.h>
+3include <stdio.h>
 
 /**
  * main - Entry point
  *
- * Description: prints a number pair
+ * Description: Print fro 0 to 9 without repeat.
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int tens;
-	int ones;
-	int t;
-	int o;
-
-	for (tens = '0'; tens <= '9'; tens++)
+	int num1;
+	int num2;
+	for (num1 = 0; num1 < 100; num1++)
 	{
-		for (ones = '0'; ones <= '9'; ones++)
+		for (num2 = num1 + 1; num2 < 100; numb2++)
 		{
-			for (t = '0'; t <= '9'; t++)
-			{
-				for (o = '0'; o <= '9'; o++)
-				{
-					putchar(tens);
-					putchar(ones);
-					putchar(' ');
-					putchar(t);
-					putchar(o);
+			putchar((num1 / 10) + '0');
+			putchar((num1 % 10) + '0');
+			putchar(' ');
+			putchar((num2 / 10) + '0');
+			putchar((num2 % 10) + '0');
 
-					if (!((tens == '9' && ones == '8') && (t == '9' && o == '9')))
-					{
-						putchar(',');
-						putchar(' ');
-					}
-				}
-				o = '0';
+			if (!(mum1 == 98 && num2 == 99))
+			{
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
+
 	putchar('\n');
 
 	return (0);
