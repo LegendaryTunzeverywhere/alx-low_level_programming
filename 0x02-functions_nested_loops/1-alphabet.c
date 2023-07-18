@@ -3,7 +3,8 @@
 /**
  * main - Entry point
  *
- * Description: print_alphabet in lowercase
+ * Description: i is a variable, for i is a and i is less or equal to z , print i increment
+ * print_alphabet - prints in lowercase
  *
  * Return: Always 0
  */
