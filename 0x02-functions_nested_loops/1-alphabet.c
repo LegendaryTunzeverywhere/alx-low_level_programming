@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * Description: prints alphabets in lowercase
+ * Description: print_alphabet in lowercase
  *
  * Return: Always 0
  */
