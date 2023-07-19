@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * void print_alphabet_x10(void) - Entry point
+ * print_alphabet_x10(void) - Entry point
  *
  * Description: Print lowercase alphabet 10x
  *
