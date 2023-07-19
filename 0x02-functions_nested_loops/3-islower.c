@@ -5,7 +5,7 @@
  * _islower - Entry lower
  *
  * Description: checks for lowercase character
- *
+ * @c: parameter for variable.
  * Return: Always 0
  */
 int _islower(int c)
