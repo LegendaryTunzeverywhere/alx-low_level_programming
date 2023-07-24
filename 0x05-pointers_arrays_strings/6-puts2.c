@@ -5,7 +5,7 @@
  * @s: string
  * Return: length
  */
-int _strleb(char *s)
+int _strlen(char *s)
 {
 	int len = 0;
 
@@ -28,7 +28,7 @@ void puts2(char *str)
 	int a;
 
 	for (a = 0; str[a] != '\0' && a < _strlen(str); a += 2)
-		_putchar(str[i]);
+		_putchar(str[a]);
 
 	_putchar('\n');
 }
