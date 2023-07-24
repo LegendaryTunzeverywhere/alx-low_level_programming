@@ -36,7 +36,7 @@ void rev_string(char *s)
 	{
 		temp = s[x];
 		s[x] = s[y];
-		s[y] =s[x];
+		s[y] = temp;
 		x++, y--;
 	}
 }
