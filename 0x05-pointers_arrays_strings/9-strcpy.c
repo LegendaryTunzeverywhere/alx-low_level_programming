@@ -29,11 +29,10 @@ int _strlen(char *s)
  */
 char *_strcpy(char *dest, char *src)
 {
-	 while (*src)
-	 {
-		 *dest = *src;
-		 src++;
-		 dest++;
-	 }
-	 return (dest);
+	int a;
+
+	for (a = 0; a <= _strlen(src); a++)
+		dest[a] = src[a];
+
+	return (dest);
 }
