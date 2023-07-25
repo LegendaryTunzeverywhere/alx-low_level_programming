@@ -33,7 +33,7 @@ char *strcpy(char *dest, char *src)
 	 {
 		 *dest = *src;
 		 src++;
-		 dest++
+		 dest++;
 	 }
 	 return (dest);
 }
