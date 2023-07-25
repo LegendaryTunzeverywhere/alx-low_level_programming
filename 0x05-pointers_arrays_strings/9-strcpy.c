@@ -27,7 +27,7 @@ int _strlen(char *s)
  * @src: this is the source to copy
  * Return: copy of original source
  */
-char *strcpy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
 	 while (*src)
 	 {
