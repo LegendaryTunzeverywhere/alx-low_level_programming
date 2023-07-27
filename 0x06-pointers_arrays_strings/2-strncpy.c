@@ -4,7 +4,7 @@
  * _strncpy - Entry point
  *
  * Description: copies n bytes of a source into buffer.
- * @dest copy source to this buffer
+ * @dest: copy source to this buffer
  * @src: this is the source to copy
  * @n: n bytes to be copied
  * Return: copied string results.
