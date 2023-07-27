@@ -9,13 +9,13 @@
  */
 char *leet(char *s)
 {
+	int c, d;
 	char a[] = "aAeEoOtTlL";
 	char b[] = "4433007711";
-	int c, d;
 
 	for (c = 0; s[c] != '\0'; c++)
 	{
-		for (d = 0; s[d] < 10; d++)
+		for (d = 0; d  < 10; d++)
 		{
 			if (s[c] == a[d])
 			{
