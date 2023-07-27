@@ -4,7 +4,7 @@
  * _strncat - Entry point
  *
  * Description: concatenate two strings
- * @ dest: string to be appended to
+ * @dest: string to be appended to
  * @src: string to appened
  * @n: append n number of bytes
  * Return: concatenated string
@@ -24,6 +24,6 @@ char *_strncat(char *dest, char *src, int n)
 		b++;
 	}
 	dest[a] = '\0';
-	
+
 	return (dest);
 }
