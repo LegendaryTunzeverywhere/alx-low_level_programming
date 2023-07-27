@@ -21,14 +21,14 @@ int _putchar(char c);
 char *_strcat(char *dest, char *src);
 
 /**
- * _strcat - Entry point
+ * _strncat - Entry point
  * @dest: string to be appended to
  * @src: string to append
  * @n: appened n number of bytes
  * Return: concatenated string
  */
 
-char *_strcat(char *dest, char *src, int n);
+char *_strncat(char *dest, char *src, int n);
 
 /**
  * _strncat - Entry point
@@ -38,7 +38,7 @@ char *_strcat(char *dest, char *src, int n);
  * Return: copied string result
  */
 
-char _*strncpy(char *dest, char *src, int n);
+char *_strncpy(char *dest, char *src, int n);
 
 /**
  * _strcmp - Entry point
