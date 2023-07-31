@@ -85,4 +85,10 @@ void puts_half(char *str);
 
 void print_array(int *a, int n);
 
+/**
+ * _atoi - Entry point
+ * @s: string
+ * Return: Always 0
+ */
+
 #endif
