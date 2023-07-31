@@ -26,3 +26,5 @@ char *_strstr(char *haystack, char *needle);
 void print_chessboard(char (*a) [8]);
 
 void print_diagram(int *a, int size);
+
+#endif
