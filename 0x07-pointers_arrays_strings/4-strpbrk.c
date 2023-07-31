@@ -14,7 +14,7 @@ char *_strpbrk(char *s, char *accept)
 	unsigned int a;
 	unsigned int b;
 
-	for (i = 0; s[a] != '\0'; a++)
+	for (a = 0; s[a] != '\0'; a++)
 	{
 		for (b = 0; accept[b] != '\0'; b++)
 		{
