@@ -3,7 +3,7 @@
 /**
  * weigh - Entry point
  * @a: index 1
- * @b: index 2
+ * @z: index 2
  *
  * Return: 1 if palindrome true, 0 if false.
  */
@@ -39,5 +39,5 @@ int is_palindrome(char *s)
 {
 	int len = _strlen(s);
 
-	return (weigh(s, (s +len - 1)));
+	return (weigh(s, (s + len - 1)));
 }
