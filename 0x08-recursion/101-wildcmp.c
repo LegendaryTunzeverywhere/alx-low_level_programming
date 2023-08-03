@@ -7,7 +7,7 @@
  * @wildc: holder
  * Return: 1 if there is a matvh, 0 if false.
  */
-int sun_match(char *s1, char *s2, char *wildc)
+int sub_match(char *s1, char *s2, char *wildc)
 {
 	if (*s1 == '\0' && *s2 == '\0')
 		return (1);
