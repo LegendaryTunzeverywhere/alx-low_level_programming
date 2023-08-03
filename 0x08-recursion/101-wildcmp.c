@@ -27,7 +27,7 @@ int sub_match(char *s1, char *s2, char *wildc)
  * wildcmp - Entry point
  *
  * @s1: 1st string
- * @s2 2nd string
+ * @s2: 2nd string
  * Description: compares if a string with wildcard matches
  *
  * Return: 1 if there is a match, 0 if no match.
