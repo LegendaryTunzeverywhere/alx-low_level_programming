@@ -7,7 +7,7 @@
  *
  * Return: 1 if palindrome true, 0 if false.
  */
-int weigh(char *a, char *b)
+int weigh(char *a, char *z)
 {
 	if (a >= z)
 		return (1);
