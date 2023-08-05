@@ -91,4 +91,6 @@ void print_array(int *a, int n);
  * Return: Always 0
  */
 
+int _atoi(char *s);
+
 #endif
