@@ -1,55 +1,54 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
+#include <sring.h>
 
 /**
  * num - Entry point
- * @argvv: argument vector
+ * @x: char to test
  * Description: check each argv to test if number by iterating.
  *
- * Return: true (0) if number, false (1) if not
+ * Return: 1 if number, 0 if not
  */
-bool is_num(char *argvv)
+int num(char *x)
 {
-	int b = 0;
+	int a, b, len;
 
-	for (b = 0; argvv[b]; b++)
+	a = 0;
+	b = 0;
+	len = strlen(x);
+	while (a < len)
 	{
-		if (!(agvv[b] >= '0' && argvv[b] <= '9'))
-			return (0);
+		if (x[a] < '0' || x[a] > '9')
+		{
+			return (-1);
+		}
+		else
+			b = b * 10 + (x[a] - '0');
+		a++;
 	}
-	return (1);
+	return (b);
 }
-
 /**
  * main - Entry point
  * @argc: argument counter
  * @argv: argument vector
- *
  * Description: print sum if all arguments are numbers.
  * Return: 0 (Success), 1 if an argumen isn't a number.
  */
 int main(int argc, char *argv[])
 {
-	int a = 1;
-	int add = 0;
+	int a, b, add;
 
-	if (argc == 1)
+	add = 0;
+	for (a = 1; a < argc; a++)
 	{
-		printf("0\n");
-		return (0);
-	}
-
-	while (a < argc)
-	{
-		if (is_num(argv[a]))
-			add += atoi(argv[a]);
-		else
+		b = num(argv[a]);
+		if (b == -1)
 		{
 			printf("Error\n");
 			return (1);
 		}
-		a++;
+		add += b;
 	}
 	printf("%d\n", add);
 
