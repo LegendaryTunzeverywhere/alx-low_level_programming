@@ -7,7 +7,7 @@
  * @argvv: argument vector
  * Description: check each argv to test if number by iterating.
  *
- * Return: true if number, false if not
+ * Return: true (0) if number, false (1) if not
  */
 bool num(char *argvv)
 {
