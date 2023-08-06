@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
 	while (a < argc)
 	{
 		if (num(argv[a]))
-			sum += atoi(argv[a]);
+			add += atoi(argv[a]);
 		else
 		{
 			printf("Error\n");
@@ -51,7 +51,7 @@ int main(int argc, char *argv[])
 		}
 		a++;
 	}
-	printf("%d\n", sum);
+	printf("%d\n", add);
 
 	return (0);
-}
+
