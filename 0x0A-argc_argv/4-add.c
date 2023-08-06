@@ -11,7 +11,7 @@
  */
 bool num(char *argvv)
 {
-	int b;
+	int b = 0;
 
 	for (b = 0; argvv[b]; b++)
 	{
