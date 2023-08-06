@@ -9,7 +9,7 @@
  *
  * Return: true (0) if number, false (1) if not
  */
-bool num(char *argvv)
+bool is_num(char *argvv)
 {
 	int b = 0;
 
@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
 
 	while (a < argc)
 	{
-		if (num(argv[a]))
+		if (is_num(argv[a]))
 			add += atoi(argv[a]);
 		else
 		{
