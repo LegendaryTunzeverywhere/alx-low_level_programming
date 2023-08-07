@@ -3,7 +3,7 @@
 
 /**
  * free_grid - Entry point
- * grid: pointer to array of integers
+ * @grid: pointer to array of integers
  * @height: height of 2D array
  *
  * Description: print a 2D dimensional array of integers.
