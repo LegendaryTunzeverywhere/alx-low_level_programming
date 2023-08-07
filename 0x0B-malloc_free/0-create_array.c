@@ -7,7 +7,7 @@
  * @c: char to be int
  *
  * Description: creates an array of chars, and int it with char.
- * Retrun: pointer to array or NULL
+ * Return: pointer to array or NULL
  */
 char *create_array(unsigned int size, char c)
 {
