@@ -9,6 +9,8 @@
  * @s2: string 2
  * @n: number of bytes from s2 to concatenate.
  *
+ * Description: Concatenate two strings together.
+ *
  * Return: points to a new allocated space in memmory, which contains s1
  * followed by the first n bytes of s2.
  */
