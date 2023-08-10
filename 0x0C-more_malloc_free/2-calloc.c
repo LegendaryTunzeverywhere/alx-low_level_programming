@@ -2,8 +2,8 @@
 
 /**
  * _calloc - Entry point
- * @nmemb - array
- * @size - size of bytes
+ * @nmemb: array
+ * @size: size of bytes
  *
  * Description: allocates memory for an array using malloc.
  * Return: NULL if size of nmemb is 0.
