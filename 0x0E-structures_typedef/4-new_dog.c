@@ -19,7 +19,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (dnew == NULL)
 		return (NULL);
 	nLen = ownLen = 0;
-	while (name[ownLen++])
+	while (name[nLen++])
 		;
 	while (owner[ownLen++])
 		;
