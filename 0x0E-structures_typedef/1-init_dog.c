@@ -1,5 +1,5 @@
 #include "dog.h"
-#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * init_dog - Entry point
@@ -14,7 +14,7 @@
 void init_dog(struct dog *d, char *name, float agge, char *owner)
 {
 	if (d == NULL)
-		;
+		return;
 	else
 	{
 		d->name = name;
