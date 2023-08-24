@@ -40,14 +40,14 @@ list_t *add_node(list_t **head, const char *str)
 	for (a = 0; str[a]; a++)
 		filler[a] = str[a];
 	new_node = malloc(sizeof(list_t));
-	if (new == NULL)
+	if (new_node == NULL)
 	{
-		free(content);
+		free(filler);
 		return (NULL);
 	}
 	new_node->str = filler;
 	new_node->len = len;
 	new_node->next = *head;
-	*head = new;
+	*head = new_node;
 	return (new_node);
 }
