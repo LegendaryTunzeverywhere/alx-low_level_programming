@@ -1,0 +1,5 @@
+# ignored executable files
+.exe
+
+# ignored compilation files
+0-main.c

@@ -7,17 +7,17 @@
 
 /**
  * struct list_s - Entry point
- * @s: strings
+ * @str: strings
  * @len: length of the strings
- * @n: pointer to next nodes.
+ * @next: pointer to next nodes.
  * 
  * Description: singly linked lists.
  */
 typedef struct list_s
 {
-	char *s;
+	char *str;
 	unsigned int len;
-	struct lists_s *n;
+	struct list_s *next;
 } list_t;
 
 size_t print_list(const list_t *h);
