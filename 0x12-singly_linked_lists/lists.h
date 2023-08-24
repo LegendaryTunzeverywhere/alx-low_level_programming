@@ -10,7 +10,7 @@
  * @str: strings
  * @len: length of the strings
  * @next: pointer to next nodes.
- * 
+ *
  * Description: singly linked lists.
  */
 typedef struct list_s
