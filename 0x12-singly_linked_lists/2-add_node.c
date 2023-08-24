@@ -2,7 +2,7 @@
 
 /**
  * _strlen - Entry point
- * @s: string to acquire length.
+ * @str: string to acquire length.
  *
  * Description: get length of string
  * Return: length of the string.
