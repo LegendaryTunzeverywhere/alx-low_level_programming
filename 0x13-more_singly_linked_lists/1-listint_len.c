@@ -4,7 +4,7 @@
  * listint_len - Entry point
  * @h: singly linked to list
  *
- * Description: Returns the number of elements 
+ * Description: Returns the number of elements
  * in a linked listint_t list
  *
  * Return: number of elements in list.
