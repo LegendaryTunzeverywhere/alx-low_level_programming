@@ -3,7 +3,7 @@
 /**
  * insert_nodeint_at_index - Entry point
  * @head: start of the list
- * @index: the idex of the node
+ * @idx: the index of the node
  * @n: elements to insert in node.
  *
  * Description: inserts the node index at 0 of a linked list.
