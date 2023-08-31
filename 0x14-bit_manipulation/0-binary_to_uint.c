@@ -1,35 +1,7 @@
 #include "main.h"
 
 /**
- * _stoi - ENtry point
- * @c: char to be converted to integer
- *
- * Description: convert characters to integers.
- * Return: converted integers.
- */
-unsigned int _stoi(char c)
-{
-	return ((unsigned int) c - '0');
-}
-
-/**
- * _strlen - Entry point
- * @s: string to check for length.
- *
- * Description: solve for the length of the string.
- * Return: string length.
- */
-unsigned int _strlen(const char *s)
-{
-	unsigned int a;
-
-	for (a = 0; s[a]; a++)
-		;
-	return (a);
-}
-
-/**
- * binary_to_unit - Entry point
+ * binary_to_uint - Entry point
  * @b: pointer to 0 and 1.
  *
  * Description: convert a binary number to an unsigned int.
@@ -39,19 +11,26 @@ unsigned int _strlen(const char *s)
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int a;
-	unsigned int total, temp, raised;
+	int _strlen = 0, a;
+	unsigned int total = 0;
 
 	if (!b)
-		return (0);
-	total = temp = 0;
-	raised = 1;
-	for (a = _strlen(b) - 1; b[a]; a++, raised *= 2)
+		return (total);
+
+	while (b[_strlen] != '0')
+		_strlen++;
+	len -= 1;
+
+	a = 0;
+	while (b[a])
 	{
-		if (b[a] != '0' && b[a] != '1')
-			return (0);
-		temp = _stoi(b[a]);
-		total += temp * raised;
+		if ((b[a] != '0') && (b[a] != '1'))
+			return (total);
+		if (b[a] == '1')
+			total += (1 * (1 << _strlen));
+		a++;
+		_strlen++;
 	}
+
 	return (total);
 }
