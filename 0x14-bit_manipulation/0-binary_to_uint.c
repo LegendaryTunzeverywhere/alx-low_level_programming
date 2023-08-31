@@ -7,7 +7,7 @@
  * Description: convert characters to integers.
  * Return: converted integers.
  */
-unsigned int _stoi(char c);
+unsigned int _stoi(char c)
 {
 	return ((unsigned int) c - '0');
 }
