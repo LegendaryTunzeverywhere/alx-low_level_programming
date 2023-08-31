@@ -12,7 +12,7 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned int sub, b;
+	unsigned long int sub, b;
 	unsigned int add, a;
 
 	add = 0;
