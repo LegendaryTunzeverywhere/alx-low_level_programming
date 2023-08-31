@@ -22,7 +22,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	{
 		if (b == (sub & b))
 			add++;
-		b << 1;
+		b <<= 1;
 	}
 	return (add);
 }
