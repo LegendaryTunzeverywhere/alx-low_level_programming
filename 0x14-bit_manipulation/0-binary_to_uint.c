@@ -11,26 +11,21 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int _strlen = 0, a;
+	int a;
 	unsigned int total = 0;
 
-	if (b == NULL)
+	if (!b)
 		return (total);
-
-	while (b[_strlen] != '\0')
-		_strlen++;
-	_strlen -= 1;
-
-	a = 0;
-	while (b[a])
+	for (a = 0; b[a] != '\0'; a++)
 	{
-		if ((b[a] != '0') && (b[a] != '1'))
-			return (total);
-		if (b[a] == '1')
-			total += (1 * (1 << _strlen));
-		a++;
-		_strlen++;
+		if (b[a] != '0' && b[a] != '1')
+			return (0);
 	}
-
+	for (a = 0; b[a] != '\0'; a++)
+	{
+		total <<= 1;
+		if (b[a] == '1')
+			total += 1;
+	}
 	return (total);
 }
