@@ -48,7 +48,7 @@ unsigned int binary_to_unit(const char *b)
 	raised = 1;
 	for (a = _strlen(b) - 1; b[a]; a++, raised *= 2)
 	{
-		if (b[a] ~= '0' && b[a] != '1')
+		if (b[a] != '0' && b[a] != '1')
 			return (0);
 		temp = _stoi(b[a]);
 		total += temp * raised;
