@@ -14,12 +14,12 @@ unsigned int binary_to_uint(const char *b)
 	int _strlen = 0, a;
 	unsigned int total = 0;
 
-	if (!b)
+	if (b == NULL)
 		return (total);
 
-	while (b[_strlen] != '0')
+	while (b[_strlen] != '\0')
 		_strlen++;
-	len -= 1;
+	_strlen -= 1;
 
 	a = 0;
 	while (b[a])
