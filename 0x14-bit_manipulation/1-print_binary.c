@@ -2,7 +2,7 @@
 
 /**
  * _expo - Entry point
- * @base: base 2 to be converted 
+ * @base: base 2 to be converted
  * @power: number of exponent
  *
  * Decription: calculates base raise to power.
