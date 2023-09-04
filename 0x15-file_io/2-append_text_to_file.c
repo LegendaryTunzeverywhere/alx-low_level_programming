@@ -6,12 +6,12 @@
  *
  * Description: Calculate the length of the string.
  *
- * Return: the length of the string, or 
+ * Return: the length of the string, or
  * -1 if the string is NULL.
  */
 ssize_t _strlen(const char *str)
 {
-	ssize_t len - 0;
+	ssize_t len = 0;
 
 	if (!str)
 		return (-1);
