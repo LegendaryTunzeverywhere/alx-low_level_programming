@@ -88,10 +88,10 @@ int main(int argc, const char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-	out = open(argv[2], O_WRONLY | O_CREAT | O_RUNC, 0664);
+	out = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (out < 0)
 	{
-		dprintf(STDERR_NO, "Error: Can't write to %s\n", argv[2]);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		close_file(in);
 		exit(99);
 	}
