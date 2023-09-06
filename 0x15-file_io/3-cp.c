@@ -37,7 +37,7 @@ ssize_t read_file(const char *filename, int fd, char *buffer, size_t add)
 
 	if (bytes_read > -1)
 		return (bytes_read);
-	dprintf(STDERR_FILENO, "Error: Cant't read from file %s\n", filename);
+	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", filename);
 	return (-1);
 }
 
