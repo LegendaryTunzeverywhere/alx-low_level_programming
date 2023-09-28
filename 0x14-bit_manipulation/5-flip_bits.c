@@ -15,7 +15,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	unsigned long int sub, b;
 	unsigned add, a;
 
-	aad = 0;
+	add = 0;
 	b = 1;
 	sub = n ^ m;
 	for (a = 0; a < (sizeof(unsigned long int) * 8); ++a)
