@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * binary_to_unit - Entry point.
+ * binary_to_uint - Entry point.
  * @b: pointer to 0 and 1.
  *
  * Description: Converts a binary number to an unsigned int.
- * Retur: the converted nummber, 0 if there is more than one chars
+ * Return: the converted nummber, 0 if there is more than one chars
  * in the string "b" that is not 0 or 1 (b is NULL).
  */
-unsigned int binary_to_unit(const char *b)
+unsigned int binary_to_uint(const char *b)
 {
 	int a;
 	unsigned int total = 0;
