@@ -38,8 +38,8 @@ void print_binary(unsigned long int n)
 		b = n & a;
 		if (b == a)
 		{
-			 d = 1;
-			 _putchar('1');
+			d = 1;
+			_putchar('1');
 		}
 		else if (d == 1 || a == 1)
 		{
