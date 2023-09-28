@@ -5,7 +5,7 @@
  * @n: first bit
  * @m: second bit
  *
- * Description: a function that returns the number of bits will be 
+ * Description: a function that returns the number of bits will be
  * needing to flip to get from one another.
  *
  * Return: the number of bits when flipped.
