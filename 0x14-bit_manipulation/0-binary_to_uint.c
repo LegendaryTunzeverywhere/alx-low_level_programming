@@ -15,7 +15,7 @@ unsigned int binary_to_uint(const char *b)
 
 	if (!b)
 		return (total);
-	for (a = 0; b[a] != '=0'; ++a)
+	for (a = 0; b[a] != '0'; ++a)
 	{
 		if (b[a] != '0' && b[a] != '1')
 			return (0);
