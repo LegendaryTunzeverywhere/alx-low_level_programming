@@ -16,8 +16,8 @@ ssize_t _strlen(const char *str)
 	if (!str)
 		return (-1);
 
-	while (*++str)
-		++len;
+	while (*str++)
+		len++;
 
 	return (len);
 }
