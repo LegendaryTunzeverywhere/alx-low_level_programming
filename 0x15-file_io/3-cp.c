@@ -33,7 +33,7 @@ int close_file(int fd)
  */
 ssize_t read_file(const char *filename, int fd, char *buffer, size_t add)
 {
-	ssize_t bytes_rea = read(fd, buffer, add);
+	ssize_t bytes_read = read(fd, buffer, add);
 
 	if (bytes_read > -1)
 		return (bytes_read);
@@ -95,7 +95,7 @@ int main(int argc, const char *argv[])
 		close_file(in);
 		exit(99);
 	}
-	while ((bytes_read = read_file(argv[1], in, bufer, BUFFSIZE)))
+	while ((bytes_read = read_file(argv[1], in, buffer, BUFFSIZE)))
 	{
 		if (bytes_read < 0)
 		{
