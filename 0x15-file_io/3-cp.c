@@ -83,7 +83,7 @@ int main(int argc, const char *argv[])
 	in = open(argv[1], O_RDONLY);
 	if (in < 0)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n",argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
 	out = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
