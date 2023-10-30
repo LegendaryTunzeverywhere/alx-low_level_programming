@@ -1,5 +1,7 @@
 #include "main.h"
 
+#define BUFFSIZE 1024
+
 /**
  * close_file - Entry point
  * @fd: file descriptor to be closed.
