@@ -1,7 +1,7 @@
 #ifndef _MAIN_H_
 #define _MAIN_H_
 
-#define BUFFSIZE	1024
+#define BUFFSIZE 1024
 
 #include <stdio.h>
 #include <stdlib.h>
