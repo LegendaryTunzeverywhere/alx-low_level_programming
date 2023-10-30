@@ -1,7 +1,5 @@
 #include "main.h"
 
-#define BUFFSIZE 1024
-
 /**
  * close_file - Entry point
  * @fd: file descriptor to be closed.
@@ -103,7 +101,7 @@ int main(int argc, const char *argv[])
 			close_file(out);
 			exit(98);
 		}
-		if (write_file(argv[2], out, bug=ffer, bytes_read) < 0)
+		if (write_file(argv[2], out, buffer, bytes_read) < 0)
 		{
 			close_file(in);
 			close(out);
