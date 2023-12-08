@@ -3,7 +3,7 @@
 /**
  * sum_dlistint - Entry point
  * @head: pointer to the head of the list
- * 
+ *
  * Description: function that returns the sum of all the data of a linked list.
  * Return: sum of all nodes or if the list is empty, return 0
  */
