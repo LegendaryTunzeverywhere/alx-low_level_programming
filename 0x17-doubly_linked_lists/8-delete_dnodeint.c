@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * delete_dnode_at_index - Entry point
+ * delete_dnodeint_at_index - Entry point
  * @head: pointer to the head of the list
  * @index: index to delete from, starts from 0.
  *
