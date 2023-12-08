@@ -8,7 +8,7 @@
  * Description: insert a node at given index
  * Return: address of inserted node
  */
-dlistint_t *insert_node(dlistint_t *tmp, int n)
+dlistint_t *insert_node(dlistint_t *temp, int n)
 {
 	dlistint_t *new;
 
