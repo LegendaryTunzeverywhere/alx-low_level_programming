@@ -1,6 +1,6 @@
 #include "lists.h"
 
-/** 
+/**
  * add_dnodeint - Entry point
  * @head: pointer to head pointer of the list
  * @n: value of the new node.
