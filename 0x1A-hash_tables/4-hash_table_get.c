@@ -11,19 +11,24 @@
  */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-	hash_node_t *a;
+	hash_node_t *temp;
 	unsigned long int idx;
 
-	if (key == NULL || ht == NULL)
+	if (ht == NULL)
 		return (NULL);
 
-	idx = key_idx((const unsigned char *)key, ht->size);
-	a = ht->array[idx];
-	
-	for (; a != NULL; a = a->next)
+	if (key == NULL || (strcmp(key, "") == 0))
+		return (NULL);
+	idx = (hash_djb2((const unsigned char *)key) % (ht->size));
+	temp = ht->array[idx];
+
+	while (temp)
 	{
-		if (strcmp(a->key, key) == 0)
-			return (a->value);
+		if (strcmp(key, temp->key) == 0)
+		{
+			return (temp->value);
+		}
+		temp = temp->next;
 	}
 	return (NULL);
 }
