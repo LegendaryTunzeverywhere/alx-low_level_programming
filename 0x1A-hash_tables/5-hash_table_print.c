@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_print - function
+ * hash_table_print - Entry point
  * @ht: hash table to print
  *
  * Description: function to print a hash table
