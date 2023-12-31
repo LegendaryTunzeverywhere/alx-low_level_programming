@@ -1,10 +1,11 @@
 #include "hash_tables.h"
+
 /**
-* hash_table_print - function
-* @ht: hash table to print
-*
-* Description: function to print a hash table
-* Return: Nothing
+ * hash_table_print - function
+ * @ht: hash table to print
+ *
+ * Description: function to print a hash table
+ * Return: Nothing
 */
 void hash_table_print(const hash_table_t *ht)
 {
@@ -16,7 +17,7 @@ void hash_table_print(const hash_table_t *ht)
 		return;
 
 	printf("{");
-	for (idx = 0; index < (ht->size); ++idx)
+	for (idx = 0; idx < (ht->size); ++idx)
 	{
 		moveNode = ht->array[idx];
 		while (moveNode != NULL)
